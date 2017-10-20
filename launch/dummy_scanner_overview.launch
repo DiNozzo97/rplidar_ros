@@ -1,0 +1,7 @@
+<!--
+  Used for displaying an overview of the distance at each side using a virtual rplidar
+ -->
+<launch>
+  <node name="dummyLaserScanner" pkg="rplidar_ros" type="dummyLaserScan.py"/>
+  <node name="laserListener" pkg="rplidar_ros" type="laserListener.py" output="screen" />
+</launch>
